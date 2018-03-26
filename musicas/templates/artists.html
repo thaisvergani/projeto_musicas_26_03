@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Nome
+                </th>
+                <th>
+                    Quantidade de Albums
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for artist in  artists %}
+            <tr>
+                <td>
+                        {{ artist.nome }}
+                </td>
+                <td>
+                    {{ artist.contagem_de_albums}}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</body>
+</html>
